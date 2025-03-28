@@ -1,10 +1,9 @@
 export default (matriz, nodos, inicio) => {
     const size = matriz.length;
-    nodos[inicio] = {
-        acumulado: 0,
-        predecesor: '-',
-        permanente: false, 
-    };
+    nodos[inicio].acumulado = 0;
+    nodos[inicio].predecesor = '-';
+    nodos[inicio].permanente = false;
+
 
     while (true) {
         let menor = Infinity;

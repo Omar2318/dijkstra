@@ -1,13 +1,19 @@
 export default (nodos,fin) => {
     let actual = fin;
-    const camino = [nodos[fin].indice];
-    while(true){
-        if(nodos[actual].predecesor == '-')
-            break;
+    try{
+        const camino = [nodos[fin].indice];
+        while(true){
+            if(nodos[actual].predecesor == '-')
+                break;
 
-        camino.push(nodos[actual].predecesor);
-        actual = nodos[actual].predecesor;
+            camino.push(nodos[actual].predecesor);
+            actual = nodos[actual].predecesor;
+        }
+        return camino;
+        
+    }catch(e){
+        alert('No hay un camino para llegar a ese nodo');
     }
 
-    return camino;
+    
 }

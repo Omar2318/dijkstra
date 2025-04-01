@@ -33,7 +33,7 @@ body {
 /* Headings */
 h2 {
   text-align: center;
-  margin: 20px 0 30px;
+  margin: 5px 0 15px;
   color: #2c3e50;
   font-size: 32px;
   font-weight: 700;
@@ -136,7 +136,7 @@ button:active {
   border-radius: 8px;
   border: 1px solid #e1e4e8;
   font-family: monospace;
-  font-size: 14px;
+  font-size: 24px;
   overflow-x: auto;
   max-width: 100%;
 }
